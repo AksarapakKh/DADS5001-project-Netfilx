@@ -100,3 +100,4 @@ df_show
 เรียงลำดับ imdb_votes จากมากไปน้อยในตาราง df_votes_8_lessmean
 
 	df_votes_8_lessmean.sort_values(by='imdb_votes',ascending=False)
+#3.
