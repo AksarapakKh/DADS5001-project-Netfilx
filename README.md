@@ -66,10 +66,11 @@ Import Data และแสดงรายละเอียดของข้�
 	df_credits = pd.read_csv('raw_credits.csv')
 	
 df_titles
+![addpic](https://user-images.githubusercontent.com/125808327/225282746-c5f56bfa-89a4-472f-95cc-ea85e57838b2.png)
 
 df_credits
 
-![addpic1](https://user-images.githubusercontent.com/125808327/225281238-3d472dbd-249f-40de-96cd-1329f1ecfb07.png)
+![addpic](https://user-images.githubusercontent.com/125808327/225281238-3d472dbd-249f-40de-96cd-1329f1ecfb07.png)
 
 ## Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
