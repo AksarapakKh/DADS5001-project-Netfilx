@@ -156,6 +156,31 @@ df_votes_8_moremean
 	show_genres = pd.Series(sum([item for item in df_show_8.genres], [])).str.replace(' ', '').value_counts().to_frame('count')
 	show_genres.reset_index()
 	
+นับจำนวนซีรีย์แต่ละประเภทในตาราง df_show_8.genres เพื่อตรวจสอบดูว่าซีรีย์ประเภทไหนได้รับความนิยมมากที่สุด
+
+	show_genres = pd.Series(sum([item for item in df_show_8.genres], [])).str.replace(' ', '').value_counts().to_frame('count')
+	show_genres.reset_index()
+ตรวจสอบดูว่าซีรีย์ประเภท drama เรื่องไหน ได้รับความนิยมมากที่สุด
+
+	df_show_8=df_show[df_show['imdb_score']>=8]
+	df_show_8.loc[ df_show_8['genres'].str.contains('drama', case=False)].sort_values(by='imdb_votes',ascending=False).head(1)
+
+ตรวจสอบดูว่าซีรีย์ประเภท crime เรื่องไหน ได้รับความนิยมมากที่สุด
+
+	df_show_8.loc[ df_show_8['genres'].str.contains('crime', case=False)].sort_values(by='imdb_votes',ascending=False).head(1)
+
+ตรวจสอบดูว่าซีรีย์ประเภท thriller เรื่องไหน ได้รับความนิยมมากที่สุด
+
+	df_show_8.loc[ df_show_8['genres'].str.contains('thriller', case=False)].sort_values(by='imdb_votes',ascending=False).head(1)
+
+ตรวจสอบดูว่าซีรีย์ประเภท comedy เรื่องไหน ได้รับความนิยมมากที่สุด
+
+	df_show_8.loc[ df_show_8['genres'].str.contains('comedy', case=False)].sort_values(by='imdb_votes',ascending=False).head(1)
+
+ตรวจสอบดูว่าซีรีย์ประเภท scifi เรื่องไหน ได้รับความนิยมมากที่สุด
+
+	df_show_8.loc[ df_show_8['genres'].str.contains('scifi', case=False)].sort_values(by='imdb_votes',ascending=False).head(1)
+
 นับว่าประเทศไหนผลิตซีรีย์มากที่สุด
 
 	num = df_show_8.groupby('production_countries')['id'].apply( lambda x: x.nunique() ).to_frame()
