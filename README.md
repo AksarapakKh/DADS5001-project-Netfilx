@@ -38,7 +38,7 @@
 	df_titles = pd.read_csv('raw_titles.csv')
 	df_titles
 
-Clean data
+# Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
 	
 	df_titles.isna().sum()
@@ -52,7 +52,8 @@ Drop NaN ในคอลัมน์ imdb_score, imdb_id และ imdb_votes �
 
 	df_titles
 	df_titles.isna().sum()
-	
+
+
 ใน df_titles จะรวมข้อมูลทั้งหนังและซีรส์ จะแบ่งข้อมูลออกเป็น 2 ส่วนคือ df_show และ df_movie
 
 df_show
