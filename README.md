@@ -208,3 +208,11 @@ df_votes_8_moremean
 ภาพยนตร์เรื่องที่จำนวนโหวตมากที่สุดของภาพยนตร์ คือ OMG: Oh My God!
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225292948-4ac5ab27-7738-43b8-a5c0-7e3f1c038475.png)
+
+กราฟนักแสดง ผู้กำกับ ซีรีส์
+
+![addpic](https://user-images.githubusercontent.com/125808327/225319001-ba53e086-6352-41b8-8798-314b675b9bfc.png)
+
+กราฟนักแสดง ผู้กำกับ ภาพยนตร์
+
+![addpic](https://user-images.githubusercontent.com/125808327/225319024-12b15afc-e477-4eae-9825-3f1e31f08256.png)
