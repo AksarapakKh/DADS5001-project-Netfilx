@@ -158,7 +158,8 @@ df_votes_8_moremean
 
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
 
-![addpic](https://user-images.githubusercontent.com/125808327/225290736-715ef837-a7b3-43bb-8525-c3095c4b2b8b.png)
+![addpic](https://user-images.githubusercontent.com/125808327/225291670-0001f92c-66a2-4185-9d63-b0dc188d5ce6.png)
 
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 10 เรื่องแรก ที่จำนวนโหวตน้อยกว่าค่าเฉลี่ยของโหวตทั้งหมด
 
+![addpic](https://user-images.githubusercontent.com/125808327/225291903-632e8fee-ef1a-413b-a0fe-e37b0e644a8b.png)
