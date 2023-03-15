@@ -66,6 +66,7 @@ Import Data และแสดงรายละเอียดของข้�
 	df_credits = pd.read_csv('raw_credits.csv')
 	
 df_titles
+
 ![addpic](https://user-images.githubusercontent.com/125808327/225282746-c5f56bfa-89a4-472f-95cc-ea85e57838b2.png)
 
 df_credits
