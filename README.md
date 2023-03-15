@@ -67,7 +67,7 @@ Import Data และแสดงรายละเอียดของข้�
 	df_titles
 	df_credits
 
-![addpic](https://drive.google.com/drive/u/0/folders/16kSSiiyYg4jiXN_YMLVvL-Wnf2nBCEU3)
+![addpic](https://upload.wikimedia.org/wikipedia/commons/d/d6/Paris_RER_D_icon.svg)
 
 ## Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
