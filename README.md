@@ -155,11 +155,24 @@ df_votes_8_moremean
 	show_genres = pd.Series(sum([item for item in df_show_8.genres], [])).str.replace(' ', '').value_counts().to_frame('count')
 	show_genres.reset_index()
 # 5. Visualization
-
+## from df_show_8
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
-
+ซีรีส์เรื่องที่จำนวนโหวตมากที่สุดของซีรีส์ คือ Breaking Bad
 ![addpic](https://user-images.githubusercontent.com/125808327/225291670-0001f92c-66a2-4185-9d63-b0dc188d5ce6.png)
 
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 10 เรื่องแรก ที่จำนวนโหวตน้อยกว่าค่าเฉลี่ยของโหวตทั้งหมด
+ซีรีส์เรื่องที่จำนวนโหวตมากที่สุดของซีรีส์ คือ Manhunt
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225292048-05cf5f8b-cb69-4d33-886e-0571e56131bb.png)
+
+
+## from df_movie_8
+กราฟ จำนวนโหวตมากที่สุดของภาพยนตร์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
+ภาพยนตร์เรื่องที่จำนวนโหวตมากที่สุดของภาพยนตร์ คือ Inception
+
+![addpic](https://user-images.githubusercontent.com/125808327/225292837-0797baad-4cbf-4d03-873a-a56c3b2581e0.png)
+
+กราฟ จำนวนโหวตมากที่สุดขอภาพยนตร์ 10 เรื่องแรก ที่จำนวนโหวตน้อยกว่าค่าเฉลี่ยของโหวตทั้งหมด
+ภาพยนตร์เรื่องที่จำนวนโหวตมากที่สุดของภาพยนตร์ คือ OMG: Oh My God!
+
+![addpic](https://user-images.githubusercontent.com/125808327/225292948-4ac5ab27-7738-43b8-a5c0-7e3f1c038475.png)
