@@ -103,4 +103,10 @@ df_votes_8_moremean
 เรียงลำดับ imdb_votes จากมากไปน้อยในตาราง df_votes_8_moremean 
 
 	df_votes_8_moremean.sort_values(by='imdb_votes',ascending=False)
+	
+นับประเภทของซีรีส์
+
+	df_show_8.genres = df_show_8.genres.str[1:-1].str.split(',')
+	show_genres = pd.Series(sum([item for item in df_show_8.genres], [])).str.replace(' ', '').value_counts().to_frame('count')
+	show_genres.reset_index()
 # 3.
