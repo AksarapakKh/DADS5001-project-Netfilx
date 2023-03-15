@@ -60,8 +60,14 @@
 	
 ## Import Data และแสดงรายละเอียดของข้อมูล
 
+Import Data และแสดงรายละเอียดของข้อมูล
+
 	df_titles = pd.read_csv('raw_titles.csv')
+	df_credits = pd.read_csv('raw_credits.csv')
 	df_titles
+	df_credits
+
+![enter image description here](https://drive.google.com/file/d/19SzIC0ssBDb6QYmFJ0nftOZGLhzZvVUV/view?usp=sharing)
 
 ## Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
