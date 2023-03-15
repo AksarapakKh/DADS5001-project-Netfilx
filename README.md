@@ -277,6 +277,8 @@ df_merge
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225357171-6ee053da-fff1-4821-abac-201cb9f9d357.png)
 
+
+
 ![addpic](https://user-images.githubusercontent.com/125808327/225292948-4ac5ab27-7738-43b8-a5c0-7e3f1c038475.png)
 
 กราฟแท่งแสดงจำนวนเรื่องของซีรีส์ที่นักแสดงหรือผู้กำกับมีบทบาทที่เกี่ยวข้อง
