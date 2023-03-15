@@ -73,7 +73,7 @@ df_credits
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225283709-69563361-ec81-435f-9f90-9100f8c01773.png)
 
-## Clean Data
+# 3. Clean Data
 ตรวจสอบ NaN ในแต่ละคอลัมน์
 	
 	df_titles.isna().sum()
@@ -110,7 +110,7 @@ df_movie
 	df_show
 	df_show.isna().sum()
 
-## Prepare Data
+# 4. Prepare Data and Analytic
 เลือกข้อมูลมาแค่แถว ที่ imdb_score มากกว่าเท่ากับ 8 โดยตั้งชื่อว่า df_show_8
 	
 	df_show_8=df_show[df_show['imdb_score']>=8]
@@ -154,4 +154,11 @@ df_votes_8_moremean
 	df_show_8.genres = df_show_8.genres.str[1:-1].str.split(',')
 	show_genres = pd.Series(sum([item for item in df_show_8.genres], [])).str.replace(' ', '').value_counts().to_frame('count')
 	show_genres.reset_index()
-# 3.
+# 5. Visualization
+
+กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
+
+![addpic]([https://user-images.githubusercontent.com/125808327/225283709-69563361-ec81-435f-9f90-9100f8c01773.png](https://user-images.githubusercontent.com/125808327/225290736-715ef837-a7b3-43bb-8525-c3095c4b2b8b.png))
+
+กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 10 เรื่องแรก ที่จำนวนโหวตน้อยกว่าค่าเฉลี่ยของโหวตทั้งหมด
+
