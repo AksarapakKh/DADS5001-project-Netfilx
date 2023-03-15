@@ -217,10 +217,6 @@ df_votes_8_moremean
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225319024-12b15afc-e477-4eae-9825-3f1e31f08256.png)
 
-กราฟดูว่าปีไหนผลิตซีรีส์ออกมาได้เยอะที่สุด
-
-![addpic](https://user-images.githubusercontent.com/125808327/225319046-860e429a-672e-422e-a5a4-8124f949ab4a.png)
-
-กราฟดูว่าปีไหนผลิตภาพยนตร์ออกมาได้เยอะที่สุด
+กราฟดูว่าปีไหนผลิตซีรีส์และภาพยนตร์ออกมาได้เยอะที่สุด
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225325988-6a7e33a5-32f4-4e39-815d-3b3e69ce9753.png)
