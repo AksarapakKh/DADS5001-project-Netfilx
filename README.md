@@ -24,6 +24,7 @@
 ไม่ เพราะว่า ไม่เหตุผลเพียงพอให้สรุป เพราะนักอสดงที่ได้รับบทบ่อย ๆ ส่วนใหญ่จะเป็นตัวประกอบที่ไม่ใช่ตัวตัดสินใจว่าเราจะดูเรื่องนั้นหรือไม่ เพราะส่วนมากการตัดสินใจของเราจะอยู่ที่บทนำ พระเอกนางเอก
 
 # 1. Data
+เป็นข้อมูลภาพยนตร์และซีรีส์ทั้งหมดที่มีใน Netflix เป็นข้อมูล ณ เดือนพฤษภาคม ปี 2022
 ข้อมูลที่ใช้ได้มาจาก [https://www.kaggle.com/datasets/thedevastator/the-ultimate-netflix-tv-shows-and-movies-dataset?select=raw_titles.csv](https://www.kaggle.com/datasets/thedevastator/the-ultimate-netflix-tv-shows-and-movies-dataset?select=raw_titles.csv)
 
 
@@ -149,11 +150,17 @@ df_votes_8_moremean
 
 	df_votes_8_moremean.sort_values(by='imdb_votes',ascending=False)
 	
-นับประเภทของซีรีส์
+นับว่ามีซีรีส์ประเภทไหนมากที่สุด
 
 	df_show_8.genres = df_show_8.genres.str[1:-1].str.split(',')
 	show_genres = pd.Series(sum([item for item in df_show_8.genres], [])).str.replace(' ', '').value_counts().to_frame('count')
 	show_genres.reset_index()
+	
+นับว่าประเทศไหนผลิตซีรีย์มากที่สุด
+
+	num = df_show_8.groupby('production_countries')['id'].apply( lambda x: x.nunique() ).to_frame()
+	num
+	
 # 5. Visualization
 ## from df_show_8
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
