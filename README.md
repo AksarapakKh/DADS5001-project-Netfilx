@@ -269,6 +269,8 @@ df_merge
 กราฟแท่งแสดงจำนวนโหวตมากที่สุดขอภาพยนตร์ 10 เรื่องแรก ที่จำนวนโหวตน้อยกว่าค่าเฉลี่ยของโหวตทั้งหมด
 ภาพยนตร์เรื่องที่จำนวนโหวตมากที่สุดของภาพยนตร์ คือ OMG: Oh My God!
 
+![addpic](https://user-images.githubusercontent.com/125808327/225292948-4ac5ab27-7738-43b8-a5c0-7e3f1c038475.png)
+
 กราฟแสดงจำนวนแต่ละประเภทของซีรีส์แต่ละเรื่อง
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225357012-5616d438-6387-4004-b404-efbc680501eb.png)
@@ -277,9 +279,6 @@ df_merge
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225357171-6ee053da-fff1-4821-abac-201cb9f9d357.png)
 
-
-
-![addpic](https://user-images.githubusercontent.com/125808327/225292948-4ac5ab27-7738-43b8-a5c0-7e3f1c038475.png)
 
 กราฟแท่งแสดงจำนวนเรื่องของซีรีส์ที่นักแสดงหรือผู้กำกับมีบทบาทที่เกี่ยวข้อง
 
