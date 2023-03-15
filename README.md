@@ -71,7 +71,7 @@ df_titles
 
 df_credits
 
-![addpic](https://user-images.githubusercontent.com/125808327/225281238-3d472dbd-249f-40de-96cd-1329f1ecfb07.png)
+![addpic](https://user-images.githubusercontent.com/125808327/225283709-69563361-ec81-435f-9f90-9100f8c01773.png)
 
 ## Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
