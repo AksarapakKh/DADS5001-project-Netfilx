@@ -216,3 +216,11 @@ df_votes_8_moremean
 กราฟนักแสดง ผู้กำกับ ภาพยนตร์
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225319024-12b15afc-e477-4eae-9825-3f1e31f08256.png)
+
+กราฟดูว่าปีไหนผลิตซีรีส์ออกมาได้เยอะที่สุด
+
+![addpic](https://user-images.githubusercontent.com/125808327/225319046-860e429a-672e-422e-a5a4-8124f949ab4a.png)
+
+กราฟดูว่าปีไหนผลิตภาพยนตร์ออกมาได้เยอะที่สุด
+
+![addpic](https://user-images.githubusercontent.com/125808327/225319069-6f27c351-34f9-4aad-ae2c-cdbe97bf8c30.png)
