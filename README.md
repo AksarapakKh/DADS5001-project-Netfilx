@@ -64,11 +64,12 @@ Import Data และแสดงรายละเอียดของข้�
 
 	df_titles = pd.read_csv('raw_titles.csv')
 	df_credits = pd.read_csv('raw_credits.csv')
-	df_titles
-	df_credits
+	
+df_titles
 
-![addpic](<img width="717" alt="Screen Shot 2566-03-15 at 16 44 41" src="https://user-images.githubusercontent.com/125808327/225281238-3d472dbd-249f-40de-96cd-1329f1ecfb07.png">
-)
+df_credits
+
+![addpic1](https://user-images.githubusercontent.com/125808327/225281238-3d472dbd-249f-40de-96cd-1329f1ecfb07.png)
 
 ## Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
