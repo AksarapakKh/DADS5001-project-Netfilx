@@ -99,4 +99,7 @@ df_votes_8_moremean
 เรียงลำดับ imdb_score จากมากไปน้อยในตาราง 	df_votes_8_moremean
 
 	df_votes_8_moremean.sort_values(by='imdb_score',ascending=False)
+เรียงลำดับ imdb_votes จากมากไปน้อยในตาราง df_votes_8_moremean 
+
+	df_votes_8_moremean.sort_values(by='imdb_votes',ascending=False)
 # 3.
