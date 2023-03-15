@@ -162,4 +162,4 @@ df_votes_8_moremean
 
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 10 เรื่องแรก ที่จำนวนโหวตน้อยกว่าค่าเฉลี่ยของโหวตทั้งหมด
 
-![addpic](https://user-images.githubusercontent.com/125808327/225291903-632e8fee-ef1a-413b-a0fe-e37b0e644a8b.png)
+![addpic](https://user-images.githubusercontent.com/125808327/225292048-05cf5f8b-cb69-4d33-886e-0571e56131bb.png)
