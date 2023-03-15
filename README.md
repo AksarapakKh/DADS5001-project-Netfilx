@@ -215,6 +215,35 @@ df_votes_8_moremean
  หนังประเภท thriller ที่ได้รับความนิยมมากที่สุดคือ Inception
 
  หนังประเภท comedy ที่ได้รับความนิยมมากที่สุดคือ Forrest Gump
+ 
+ ความนิยมของนักแสดงหรือผู้กำกับมีผลกับความนิยมหนังและซีรีย์หรือไม่
+ดูรายละเอียดข้อมูล
+	
+	df_credits = pd.read_csv('raw_credits.csv')
+	df_credits
+เช็คจำนวนผู้กำกับและนักแสดง
+
+	df_credits['role'].value_counts().to_frame('count_role')
+
+df_merge
+
+รวมตาราง df_titles และ df_credits
+	
+	df_merge = pd.merge(df_titles,df_credits,left_on='id',right_on='id')
+	df_merge
+เช็ค nan ในคอลัมน์ที่เรานำมาวิเคราะห์
+
+	df_merge.isna().sum()
+รวมตารางเฉพาะซีรีย์ที่ได้คะแนนโหวตมากกว่าหรือเท่ากับ8
+
+	df_merge_show_8 = pd.merge(df_show_8,df_credits,left_on='id',right_on='id')
+	df_merge_show_8
+นับจำนวนซีรีย์ที่แสดงของแต่ละคนทั้งผู้กำกับและนักแสดง
+
+	people_s = df_merge_show_8.groupby('name').size().sort_values(ascending=False).to_frame('count_people')
+	people_s = people_s.reset_index()
+	people_s
+เราพบว่า Ahn Nae-sang และ Aamir Khan มีบทบาทเกี่ยวกับซีรีย์และหนังที่ได้รับความนิยมมากที่สุดตามลำดับ แต่เมื่อเรานำรายชื่อค้นหาใน google พบว่าพวกเขาไม่ได้เป็นตัวละครหลัก ดังนั้นข้อมูลชุดนี้ไม่สามารถตัดสินใจได้ว่าความนิยมของนักแสดงหรือผู้กำกับมีผลกับความนิยมหนังและซีรีย์หรือไม่
 # 5. Visualization
 ## from df_show_8
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
