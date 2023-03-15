@@ -92,12 +92,20 @@ df_show
 
 	df_votes_8_lessmean=df_show_8[df_show_8['imdb_votes']<mean_vote_8]
 	df_votes_8_lessmean.head()
-เรียงลำดับ imdb_score จากมากไปน้อยในตาราง 
-
-	df_votes_8_lessmean
+เรียงลำดับ imdb_score จากมากไปน้อยในตาราง df_votes_8_lessmean
+	
 	df_votes_8_lessmean.sort_values(by='imdb_score',ascending=False)
 
 เรียงลำดับ imdb_votes จากมากไปน้อยในตาราง df_votes_8_lessmean
 
 	df_votes_8_lessmean.sort_values(by='imdb_votes',ascending=False)
+เลือกแถวที่มีคะแนนโหวตมากกว่าหรือเท่ากับค่าเฉลี่ยของโหวตในตาราง df_show_8 และตั้งชื่อตารางใหม่ว่า 
+df_votes_8_moremean
+
+	df_votes_8_moremean=df_show_8[df_show_8['imdb_votes']>=mean_vote_8]
+	df_votes_8_moremean
+
+เรียงลำดับ imdb_score จากมากไปน้อยในตาราง 	df_votes_8_moremean
+
+	df_votes_8_moremean.sort_values(by='imdb_score',ascending=False)
 # 3.
