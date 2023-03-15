@@ -67,7 +67,7 @@ Import Data และแสดงรายละเอียดของข้�
 	df_titles
 	df_credits
 
-![enter image description here](https://drive.google.com/file/d/19SzIC0ssBDb6QYmFJ0nftOZGLhzZvVUV/view?usp=sharing)
+![addpic](https://drive.google.com/drive/u/0/folders/16kSSiiyYg4jiXN_YMLVvL-Wnf2nBCEU3)
 
 ## Clean data
 ตรวจสอบ Nan ในแต่ละคอลัมน์
