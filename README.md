@@ -122,11 +122,11 @@ df_movie
 	df_show_8=df_show_8.sort_values(by='imdb_votes',ascending=True)
 	df_show_8
 
-หาค่าเฉลี่ยของคะแนนโหวตในตาราง df_show_8
+หาค่าเฉลี่ยของคะแนนโหวตในตาราง df_show_8 เพื่อนำมาคัด score ที่มีคุณภาพ
 
 	mean_vote_8 = df_show_8['imdb_votes'].mean()
 	mean_vote_8
-เลือกแถวที่มีคะแนนโหวตน้อยกว่าค่าเฉลี่ยของโหวตในตาราง df_show_8 และตั้งชื่อตารางใหม่ว่า df_votes_8_lessmean
+เลือกแถวที่มีคะแนนโหวตน้อยกว่าค่าเฉลี่ยของโหวตในตาราง df_show_8 และตั้งชื่อตารางใหม่ว่า df_votes_8_lessmean เนื่องจากซีรีย์บางเรื่องกำลังจะฉายเมื่อไม่นานมานี้ ทำให้คะแนนโหวตน้อย
 
 	df_votes_8_lessmean=df_show_8[df_show_8['imdb_votes']<mean_vote_8]
 	df_votes_8_lessmean.head()
@@ -185,7 +185,23 @@ df_votes_8_moremean
 
 	num = df_show_8.groupby('production_countries')['id'].apply( lambda x: x.nunique() ).to_frame()
 	num
-	
+ในทำนองเดียวกันเราทำการ clean data และ Prepare Data and Analytic กับ df_movie จากการวิเคราะห์ เราจะได้ว่า
+ประเทศที่ผลิตซีรีย์ออกมามีคุณภาพมากที่สุดคือ สหรัฐอเมริกา
+ประเภทซีรีย์ที่เป็นที่นิยมมากที่สุดคือ Drama
+ซีรีย์ประเภท drama ที่ได้รับความนิยมมากที่สุดคือ Breaking Bad
+ซีรีย์ประเภท crime ที่ได้รับความนิยมมากที่สุดคือ Breaking Bad
+ซีรีย์ประเภท thriller ที่ได้รับความนิยมมากที่สุดคือ Breaking Bad
+ซีรีย์ประเภท comedy ที่ได้รับความนิยมมากที่สุดคือ Better Call Saul
+ซีรีย์ประเภท scifi ที่ได้รับความนิยมมากที่สุดคือ Stranger Things
+ประเทศที่ผลิตหนังออกมามีคุณภาพมากที่สุดคือ อินเดีย
+ประเภทหนังที่เป็นที่นิยมมากที่สุดคือ Drama
+หนังประเภท drama ที่ได้รับความนิยมมากที่สุดคือ Forrest Gump
+หนังประเภท crime ที่ได้รับความนิยมมากที่สุดคือ Taxi Driver
+หนังประเภท music ที่ได้รับความนิยมมากที่สุดคือ Inception
+หนังประเภท thriller ที่ได้รับความนิยมมากที่สุดคือ Inception
+หนังประเภท comedy ที่ได้รับความนิยมมากที่สุดคือ Forrest Gump
+หนังประเภท scifi ที่ได้รับความนิยมมากที่สุดคือ Inception
+จากข้อมูลเราจะได้ว่าหนังมีความนิยมมากกว่าซีรีย์ อ้างอิงจากค่า mean
 # 5. Visualization
 ## from df_show_8
 กราฟ จำนวนโหวตมากที่สุดของซีรีส์ 13 เรื่องแรก ที่จำนวนโหวตมากกว่าค่าเฉลี่ยของโหวตทั้งหมด
@@ -208,19 +224,3 @@ df_votes_8_moremean
 ภาพยนตร์เรื่องที่จำนวนโหวตมากที่สุดของภาพยนตร์ คือ OMG: Oh My God!
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225292948-4ac5ab27-7738-43b8-a5c0-7e3f1c038475.png)
-
-กราฟนักแสดง ผู้กำกับ ซีรีส์
-
-![addpic](https://user-images.githubusercontent.com/125808327/225319001-ba53e086-6352-41b8-8798-314b675b9bfc.png)
-
-กราฟนักแสดง ผู้กำกับ ภาพยนตร์
-
-![addpic](https://user-images.githubusercontent.com/125808327/225319024-12b15afc-e477-4eae-9825-3f1e31f08256.png)
-
-กราฟดูว่าปีไหนผลิตซีรีส์ออกมาได้เยอะที่สุด
-
-![addpic](https://user-images.githubusercontent.com/125808327/225319046-860e429a-672e-422e-a5a4-8124f949ab4a.png)
-
-กราฟดูว่าปีไหนผลิตภาพยนตร์ออกมาได้เยอะที่สุด
-
-![addpic](https://user-images.githubusercontent.com/125808327/225319069-6f27c351-34f9-4aad-ae2c-cdbe97bf8c30.png)
