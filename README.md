@@ -94,8 +94,8 @@ df_show
 df_movie
 แบ่งข้อมูลออกมาเฉพาะที่เป็นภาพยนตร์
 	
-	df_show = df_titles[df_titles['type']=='SHOW']
-	df_show.head()
+	df_movie = df_titles[df_titles['type']=='MOVIE']
+	df_movie.head()
 
 ตรวจสอบคอลัมน์ที่เรานำมาวิเคราะห์ว่ามีค่า NaN ไหมในตาราง 
 
@@ -107,11 +107,6 @@ df_movie
 	
 	df_show_8=df_show[df_show['imdb_score']>=8]
 	df_show_8.head()
-
-เรียงลำดับ imdb_votes จากน้อยไปมากในตาราง df_show_8
-
-	df_show_8=df_show_8.sort_values(by='imdb_votes',ascending=True)
-	df_show_8
 
 หาค่าเฉลี่ยของคะแนนโหวตในตาราง df_show_8
 
@@ -226,15 +221,6 @@ df_votes_8_moremean
 เช็คจำนวนผู้กำกับและนักแสดง
 
 	df_credits['role'].value_counts().to_frame('count_role')
-
-รวมตาราง df_titles และ df_credits
-	
-	df_merge = pd.merge(df_titles,df_credits,left_on='id',right_on='id')
-	df_merge
-	
-เช็ค nan ในคอลัมน์ที่เรานำมาวิเคราะห์
-
-	df_merge.isna().sum()
 	
 รวมตารางเฉพาะซีรีส์ที่ได้คะแนนโหวตมากกว่าหรือเท่ากับ8
 
@@ -303,7 +289,7 @@ histogram ของคะแนน imdb_score ของภาพยนตร์
 ![addpic](https://user-images.githubusercontent.com/125808327/225319024-12b15afc-e477-4eae-9825-3f1e31f08256.png)
 
 
-## กราฟดูว่าปีไหนผลิตซีรีส์และภาพยนตร์ออกมาได้เยอะที่สุด
+## กราฟดูว่าภาพยนตร์และซีรีส์ปล่อยออกในปีไหนที่ Netflix เลือกมาเข้ามาฉายเยอะที่สุด
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225325988-6a7e33a5-32f4-4e39-815d-3b3e69ce9753.png)
 
