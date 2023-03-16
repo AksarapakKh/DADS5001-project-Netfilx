@@ -226,7 +226,7 @@ df_votes_8_moremean
 เช็คจำนวนผู้กำกับและนักแสดง
 
 	df_credits['role'].value_counts().to_frame('count_role')
-	df_merge
+	df_credits
 
 รวมตาราง df_titles และ df_credits
 	
