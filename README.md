@@ -103,7 +103,7 @@ df_movie
 	df_show.isna().sum()
 
 # 4. Prepare Data and Analytic
-เลือกข้อมูลมาแค่แถว ที่ imdb_score มากกว่าเท่ากับ 8 โดยตั้งชื่อว่า df_show_8
+เลือกข้อมูลมาแค่แถว ที่ imdb_score มากกว่าเท่ากับ 8 โดยตั้งชื่อว่า df_show_8 เพราะว่าเราต้องการจะพิจารณาเฉพาะเรื่องที่มีความนิยมคือเรื่องที่มีคะแนนตั้งแต่ 8 ขั้นไป
 	
 	df_show_8=df_show[df_show['imdb_score']>=8]
 	df_show_8.head()
@@ -257,6 +257,9 @@ histogram ของคะแนน imdb_score ของซีรีส์
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225319001-ba53e086-6352-41b8-8798-314b675b9bfc.png)
 
+กราฟแท่งแสดงจำนวนซีรีส์ของแต่ละประเทศ ประเทศที่ผลิตซีรีส์ที่มากที่สุดคือ ประเทศสหรัฐอเมริกา
+![addpic](https://user-images.githubusercontent.com/125808327/225849478-127ab081-ddbf-4c53-b445-7df51d769132.png)
+
 ## สำหรับข้อมูลภาพยนตร์
 histogram ของคะแนน imdb_score ของภาพยนตร์
 จะเห็นว่าคะแนน imdb_score ส่วนใหญ่จะอยู่ที่ 8.0 - 8.2 คะแนน และ คะแนนที่มากที่สุดจะอยู่ที่ 9.0 คะแนน
@@ -283,6 +286,8 @@ histogram ของคะแนน imdb_score ของภาพยนตร์
 
 ![addpic](https://user-images.githubusercontent.com/125808327/225319024-12b15afc-e477-4eae-9825-3f1e31f08256.png)
 
+กราฟแท่งแสดงจำนวนภาของแต่ละประเทศ ประเทศที่ผลิตซีรีส์ที่มากที่สุดคือ ประเทศอินเดีย
+![addpic](https://user-images.githubusercontent.com/125808327/225849773-cdfb4b52-c801-47e7-832c-869abb4cbe42.png)
 
 ## กราฟดูว่าภาพยนตร์และซีรีส์ปล่อยออกในปีไหนที่ Netflix เลือกมาเข้ามาฉายเยอะที่สุด
 
